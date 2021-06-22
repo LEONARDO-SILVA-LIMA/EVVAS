@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon-1.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a01f95b2bf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/btnResult.css">
+    <link rel="stylesheet" href="wa/floating-wpp.css">
+    <link rel="stylesheet" href="glider/glider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Laboratório Evvas</title>
+</head>
+
+<body>
+    <header>
+        <section class="background-header-section-one">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-5 changeClass">
+                        <h1>
+                            <a href="index.html">
+                                <img src="img/logo1.png" style="height: 3.6rem;" alt="Laboratório LabDemo">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="col-2 removeElement">
+                        <div class="row ">
+                            <p><i class="fas fa-map-marker-alt"></i><b>Monte Azul, MG</b></p>
+                        </div>
+                    </div>
+                    <div class="col-3 removeElement">
+                        <div class="row ">
+                            <p><i class="fas fa-envelope-open-text"></i><b>contato@laboratorioevvas.com.br</b></p>
+                        </div>
+                    </div>
+                    <div class="col-2 removeElement">
+                        <div class="row ">
+                            <p><i class="fas fa-phone-alt"></i><b>(38) 3811 1606</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class=" " id="changeContainer">
+                <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">HOME </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#exams">EXAMES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#search">PESQUISA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#question">PERGUNTAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">FALE CONOSCO</a>
+                            </li>
+                        </ul>
+
+                        <!--<a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+                            class="nav-link nav-result" href="#"><i class="fas fa-user mr-2"></i><b> RESULTADOS DE
+                                EXAMES</b></a>-->
+
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section >
+
+            <div class="hero-image">
+                <div  class="hero-text  ">
+                    <div class="modal-result">
+
+                        <form class="modal-content-result animate"
+                            action="https://www.resultados.com.br/index.aspx?origem=labdemo" onSubmit="return valida()"
+                            method="post" id="frmAutenticacao" name="frmAutenticacao">
+                            <input type="hidden" name="frame" value="S">
+                            <input type="hidden" name="redir" value="https://www.sline.com.br/">
+                            <div class="imgcontainer">
+                                <h5 class=""><strong>RESULTADOS EXAMES</strong></h5>
+
+                            </div>
+
+                            <div class="container-result  mt-5">
+                                <!--<label for="uname"><b>Username</b></label>-->
+
+                                <div class=" input-group input-group-lg flex-nowrap ">
+                                    <input placeholder="CHAVE" type="text" name="identificacao" id="identificacao"
+                                        maxlength="20" REQUIRED class="form-control result"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                                </div>
+                                <!--<label for="psw"><b>Password</b></label>-->
+                                <div class=" input-group input-group-lg flex-nowrap pt-3">
+                                    <input type="password" name="senha" id="senha" maxlength="20" required
+                                        class="form-control result " placeholder="SENHA" aria-label="Password"
+                                        aria-describedby="addon-wrapping">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="click clickShow fas fa-eye"></i></span>
+                                    </div>
+                                </div>
+
+                                <button class="btn-result-login rounded" type="submit"><b>ACESSAR</b></button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+
+        </section>
+    </header>
+    <main>
+
+
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-5  section-three-img">
+                        <img class="rounded " src="img/team.jpg" alt="Imagem da Equipe">
+                    </div>
+                    <div class="col pt-2 col-12 col-md-7">
+                        <h2>Quem Somos</h2>
+                        <p>
+                            O Laboratório Evvas iniciou suas atividades em abril de 1997 a Praça Coronel Jonathas em Monte Azul.
+                            Passou por várias modificações até que em 2005 instalou-se a Rua Governador Valadares. Houve intensa modernização em equipamentos,
+                            contratação do Programa Nacional de Controle de Qualidade (PNCQ) e investimento na qualificação profissional,
+                            garantindo assim qualidade e agilidade em exames laboratoriais.
+                            O grupo Evvas preocupado em manter seu padrão de qualidade com maior conforto e comodidade aos clientes e colaboradores,
+                            procurou ampliar sua estrutura física construindo o que é hoje sua atual matriz,
+                            dispondo de uma infra-estrutura moderna a qual atende todas as exigências estabelecidas pela Agência Nacional de Vigilância Sanitária (ANVISA).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="pt-5 pb-5 section-main-card">
+            <div class="container">
+                <span class="line-main-why"></span> <span class="line-main-why-two"></span>
+                <h2>
+                    Porque escolher o Laboratório?
+                </h2>
+                <br>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col  col-md-4 col-12 shadow-lg p-3 mb-5 bg-white rounded">
+                       <div class="content">
+                        <i class="far fa-handshake"></i>
+                        <h5 class="pb-3">Segurança</h5>
+                        <p> A confiabilidade alcançada pelo Laboratorio Evvas é conseqüência de um rigoroso controle de processos,
+                            processos estes que se estendem desde o atendimento pela recepção à entrega de laudos.</p>
+                       </div>
+                    </div>
+                    <div class="col col col-md-4 col-12 shadow-lg p-3 mb-5 bg-white rounded">
+                        <div class="content">
+                            <i class="fas fa-ambulance"></i>
+                         <h5 class="pb-3">Coleta domiciliar</h5>
+                         <p> Entre em contato conosco e saiba mais detalhes (Necessita de agendamento prévio).</p>
+                        </div>
+                     </div>
+                     <div class="col col col-md-4 col-12 shadow-lg p-3 mb-5 bg-white rounded">
+                        <div class="content">
+                            <i class="fas fa-headset"></i>
+                         <h5 class="pb-3">Qualidade de atendimento</h5>
+                         <p> Levar aos clientes confiabilidade, respeito e ética profissional, normatizar e seguir os documentos padronizados.</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <section style="position: relative !important;" id="exams" class="  background-main-section-three">
+            <div class="container">
+                <div class="row">
+                    <div class="col pt-5">
+                        <h2>Veja nossa lista<br />completa dos <span class="featured">exames<br /> que realizamos</span>
+                        </h2><br />
+                        <div class="btn-section-three"><button type="button" class="btn btn-light ">VER LISTA</button>
+                        </div>
+                    </div>
+                    <div class="col img-main-three ">
+                        <img src="img/list-exams.jpg" class=" shadow-lg rounded" alt="Imagem Lista de Exames">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="unity" class="pt-5 pb-5  background-main-section-four ">
+            <div class="text-center pt-5">
+                <h2>Conheça nossas unidades</h2><br>
+                <!--<p>Insira aqui um texto do Laboratório. Esse texto é apenas um exemplo de como pode ficar a descrição so
+                    serviço que você deseja disponibilizar para seus clientes.</p>-->
+            </div>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col col-12 col-md-3  card-unity img-background-section-four ">
+                        <div class="image-background-color-four"></div>
+                        <div class="text-format-four">
+                            <h4>
+                                Matriz
+                            </h4>
+                            <div class="btn-section-four">
+                                <button type="button" class="btn btn-light click-unity ">VER DETALHES</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-3 card-unity img-background-section-four ">
+                        <div class="image-background-color-four"></div>
+                        <div class="text-format-four">
+                            <h4>
+                                Posto de Coleta
+                            </h4>
+                            <div class="btn-section-four">
+                                <button type="button" class="btn btn-light click-unity ">VER DETALHES</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="search" class="pt-5 pb-5  background-main-five">
+            <div class="container">
+                <div class="row">
+                    <div class="col offset-md-1 col-md-10 text-center">
+                        <h2>
+                            Queremos saber sua opinião
+                        </h2>
+                        <p>
+                            Nós ajude a melhorar, responda nossa pesquisa de qualidade de nossas unidades.
+                        </p>
+                        <div class="btn-section-five">
+                            <button type="button" class="btn btn-light  ">RESPONDER A PESQUISA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span id="partners"></span>
+        </section>
+        <section id="" class="pt-5 pb-5 main-section-six">
+            <div class="text-center">
+                <h2>Conheça nossos convênios</h2>
+                <p>Procurando oferecer aos nossos clientes as melhores opções de atendimento, informamos a relação de convênios credenciados.</p>
+            </div>
+            <div style="width: 95%;" class="container pt-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="glider-contain">
+                            <div class="glider">
+                                <div><img src="https://www.resultados.com.br/SLC/unimed.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/bradesco_saude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/maisSaude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/ipsemg.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/unimed.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/bradesco_saude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/maisSaude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/ipsemg.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/unimed.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/bradesco_saude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/maisSaude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/ipsemg.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/unimed.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/bradesco_saude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/maisSaude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/ipsemg.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/unimed.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/bradesco_saude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/maisSaude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/ipsemg.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/unimed.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/bradesco_saude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/maisSaude.gif" alt=""> </div>
+                                <div><img src="https://www.resultados.com.br/SLC/ipsemg.gif" alt=""> </div>
+                            </div>
+
+                            <!--<button aria-label="Previous" class="glider-prev"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button aria-label="Next" class="glider-next"><i class="fas fa-chevron-right"></i></button>-->
+                            <div role="tablist" class="dots"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="question" class="pt-5 pb-5 background-main-section-seven">
+            <div class="container">
+                <div class="row">
+                    <div class="col offset-md-1 col-md-10 text-center">
+                        <h2>
+                            Tem alguma dúvida?
+                        </h2>
+
+                        <div class="btn-section-five">
+                            <button type="button" class="btn btn-light  ">VEJA NOSSA LISTA DE PERGUNTAS
+                                FREQUETES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quiz" class=" ">
+            <div class="container main-section-ten">
+                <div class="row">
+                    <!--<div class="col pb-5 pt-5 text-center background-quiz text-white">
+                        <div class="quiz">
+                            <img class="rounded mx-auto d-block" src="img/quiz.png" width="40%" alt="">
+                            <h3 class="text-white">Responda ao nosso Quiz</h3>
+                            <p class="text-white">Insira aqui um texto do Laboratório. Esse texto é apenas um exemplo de
+                                como pode ficar a descrição so serviço que você deseja disponibilizar para seus
+                                clientes!
+                            </p>
+                            <div class="btn-section-nine">
+                                <button type="button" class="btn btn-light pl-5 pr-5  ">ACESSAR QUIZ
+                                </button>
+                            </div>
+                        </div>
+                    </div>-->
+                    <div class="col  text-center format-text-section-ten ">
+                        <br>
+                        <h3>CALCULO DE IMC</h3>
+                        <div class="row imc">
+                            <div class="col  text-left">
+                                <input onkeydown="return ( event.ctrlKey || event.altKey 
+                                || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) 
+                                || (95<event.keyCode && event.keyCode<106)
+                                || (event.keyCode==8) || (event.keyCode==9) 
+                                || (event.keyCode>34 && event.keyCode<40) 
+                                || (event.keyCode==46) )" onkeyup="this.value=this.value.replace(/[^\d]/,'')"
+                                    oninput="maxLengthCheck(this)" maxlength="3" type="number"
+                                    class="form-control peso " placeholder="Peso(kg) EX.: 90" min="1" max="999"
+                                    id="peso">
+                                <br>
+                                <input onkeydown="return ( event.ctrlKey || event.altKey 
+                                || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) 
+                                || (95<event.keyCode && event.keyCode<106)
+                                || (event.keyCode==8) || (event.keyCode==9) 
+                                || (event.keyCode>34 && event.keyCode<40) 
+                                || (event.keyCode==46) )" onkeyup="this.value=this.value.replace(/[^\d]/,'')"
+                                    oninput="maxLengthCheck(this)" maxlength="3" type="number"
+                                    class="form-control altura" placeholder="Altura(cm) EX.:170" min="1" max="999"
+                                    id="altura">
+                                <br>
+                                <button id="botao" class="btn btn-primary calcular">Fazer calculo</button>
+                                <br>
+                                <div id="resultado">
+                                </div>
+                            </div>
+                            <div class="col text-left">
+                                <img src="img/imc.png" alt="IMC">
+                                <p>Compare seu resultado com a tabela acima, proposta pela Organização Mundial de Saúde
+                                </p>
+                                <p>É importante observar que o IMC é apenas uma estimativa. Os índices podem variar de
+                                    acordo com a idade, sexo, massa muscular e outros fatores.</p>
+                                <p><b>Para uma avaliação mais precisa, consulte um especialista.</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section id="news" class="pt-5 pb-5 ">
+            <div class="container text-center">
+                <h2>Nossas últimas notícias</h2>
+                <span class="line-news"></span>
+                <p>Insira aqui um texto do Laboratório. Esse texto é apenas um exemplo de como pode ficar a descrição so
+                    serviço que você deseja disponibilizar para seus clientes.</p>
+            </div>
+            <div style="width: 95%;" class="container pt-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="glider-contain">
+                            <div class="gliderr">
+                                <div class="card mb-3 ml-3 mr-3" style="max-width: 540px;">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <img src="http://www.resultados.com.br/sin/SNT/labdemo_6.jpg"
+                                                alt="Notícias Labdemo">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body format-text-eight">
+                                                <h6 class="card-title ">Selo do Inmetro para agulhas, seringas e equipos
+                                                </h6>
+                                                <p class="card-text ">
+                                                    Agulhas, seringas e equipos fabricados a partir de 1º de julho deste
+                                                    ano precisam ter certificação do Inmetro.
+                                                </p>
+                                                <p class="card-text"><small class="text-muted"><a data-toggle="modal"
+                                                            data-target="#modal1">VER MAIS</a>
+                                                    </small></p>
+                                                <!-- Modal 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card mb-3 ml-3 mr-3" style="max-width: 540px;">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <img src="http://www.resultados.com.br/sin/SNT/labdemo_6.jpg"
+                                                alt="Notícias Labdemo">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body format-text-eight">
+                                                <h6 class="card-title ">Selo do Inmetro para agulhas, seringas e equipos
+                                                </h6>
+                                                <p class="card-text ">
+                                                    Agulhas, seringas e equipos fabricados a partir de 1º de julho deste
+                                                    ano precisam ter certificação do Inmetro.
+                                                </p>
+                                                <p class="card-text"><small class="text-muted"><a data-toggle="modal"
+                                                            data-target="#modal1">VER MAIS</a>
+                                                    </small></p>
+                                                <!-- Modal 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-3 ml-3 mr-3" style="max-width: 540px;">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <img src="http://www.resultados.com.br/sin/SNT/labdemo_6.jpg"
+                                                alt="Notícias Labdemo">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body format-text-eight">
+                                                <h6 class="card-title ">Selo do Inmetro para agulhas, seringas e equipos
+                                                </h6>
+                                                <p class="card-text ">
+                                                    Agulhas, seringas e equipos fabricados a partir de 1º de julho deste
+                                                    ano precisam ter certificação do Inmetro.
+                                                </p>
+                                                <p class="card-text"><small class="text-muted"><a data-toggle="modal"
+                                                            data-target="#modal1">VER MAIS</a>
+                                                    </small></p>
+                                                <!-- Modal 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-3 ml-3 mr-3" style="max-width: 540px;">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <img src="http://www.resultados.com.br/sin/SNT/labdemo_6.jpg"
+                                                alt="Notícias Labdemo">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body format-text-eight">
+                                                <h6 class="card-title ">Selo do Inmetro para agulhas, seringas e equipos
+                                                </h6>
+                                                <p class="card-text ">
+                                                    Agulhas, seringas e equipos fabricados a partir de 1º de julho deste
+                                                    ano precisam ter certificação do Inmetro.
+                                                </p>
+                                                <p class="card-text"><small class="text-muted"><a data-toggle="modal"
+                                                            data-target="#modal1">VER MAIS</a>
+                                                    </small></p>
+                                                <!-- Modal 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<button aria-label="Previous" class="glider-prev"><i
+                                        class="fas fa-chevron-left"></i></button>
+                                <button aria-label="Next" class="glider-next"><i
+                                        class="fas fa-chevron-right"></i></button>
+                            <div role="tablist" class="dotss"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="z-index: 10000 !important;" class="modal fade" id="modal1" tabindex="-1"
+                aria-labelledby="modal1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="">Selo do Inmetro para agulhas, seringas e equipos</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Agulhas, seringas e equipos fabricados a partir de 1º de julho deste ano precisam ter
+                            certificação do Inmetro. Recebem o selo os que forem aprovados no teste realizado para o
+                            Programa de Análise de Produtos, que segue regulamentação da Agência Nacional de Vigilância
+                            Sanitária (Anvisa). Os produtos desse tipo fabricados antes de 1º de julho, mesmo que não
+                            tenham o selo, podem ser vendidos e usados até a data de validade.
+
+
+                            A regra abrange todos os fabricantes, importadores e comerciantes. Quem não cumpri-la está
+                            sujeito a punições legais. Em fevereiro de 2010, o Inmetro testou 13 marca de seringas e
+                            agulhas. Sete eram hipodérmicas (contêm a agulha), quatro eram sem agulha e duas possuíam
+                            agulhas avulsas.
+
+
+                            "Apenas duas estavam com as amostras dentro da conformidade. Por isso, incluímos na lista de
+                            produtos com certificação compulsória seringas, agulhas e também equipos que não foram
+                            avaliados nesse teste", explicou, em entrevista ao jornal O Globo (RJ), o chefe da Divisão
+                            de Orientação e Incentivo à Qualidade do Inmetro, André Santos.
+
+
+                            O teste nas hipodérmicas mostrou que algumas podiam provocar ferimentos, contaminação e
+                            desperdiçar medicamentos, além da cânula não resistir à corrosão. Os principais problemas
+                            encontrados nos equipos foram vazamentos, velocidade inadequada de fluxo do medicamento e
+                            conexões defeituosas, além de estarem fora do padrão exigido.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>-->
+    </main>
+    <footer>
+        <section id="contact" class="pt-5 pb-5 bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <p><b><span class="bg-title" style="font-size: 20px;">Endereço</span></b><span
+                                style="font-size: 10px;">(Matriz)</span>
+
+                            <br> <span class="fotterLine"></span>
+                            <br>Rua Governador Magalhães Pinto
+                            <br>Nº 675
+                            <br>Monte Azul - MG
+                            <!--<br>CEP: 22222-000-->
+                            <br>
+                            <br><b><span class="bg-title" style="font-size: 20px;">Contato</span></b>
+                            <br><span class="fotterLine"></span><br>
+                            <span class="fas fa-phone-square p-2 pl-1"></span>
+                            <span class="">(38) 3811 1606</span><br>
+                            <span class="fab fa-whatsapp p-2 pl-1 "></span>
+                            <span class=" ">(38) 99190 8382</span><br>
+                            <span class="fas fa-at p-2"></span>
+                            <span class="">contato@laboratorioevvas.com.br</span><br>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <p>
+                            <b><span class="bg-title" style="font-size: 20px;">Siga-nos</span></b>
+                            <br> <span class="fotterLine"></span>
+                            <br>
+                            <a href="#" target="_blank">
+                                <span class="fab fa-instagram  pr-2 pb-2 pt-2"></span>
+                                <span class="">Instagram</span>
+                            </a><br>
+                            <a href="#" target="_blank">
+                                <span class="fab fa-facebook-f pr-2 pb-2 pt-2  "></span>
+                                <span class="  ">Facebook</span>
+                            </a>
+                            <br>
+                            <br><b><span class="bg-title" style="font-size: 20px;">Links Rápidos</span></b>
+                            <br> <span class="fotterLine"></span>
+                            <br><a href="#">- Exames</a>
+                            <br><a href="#">- Exames</a>
+                            <br><a href="#">- Exames</a>
+                            <br><a href="#">- Exames</a>
+                            <br><a href="#">- Exames</a>
+
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p><b><span class="bg-title" style="font-size: 20px;">Entre em Contato<span
+                                        class="fotterLine"></span></span></b></p>
+
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Seu e-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Seu telefone">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control bg-textAreaFooter" placeholder="Escreve sua mensagem"
+                                    rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary ">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--<div id="id01" class="modal-result">
+
+        <form class="modal-content-result animate" action="https://www.resultados.com.br/index.aspx?origem=labdemo" onSubmit="return valida()"
+        method="post" id="frmAutenticacao" name="frmAutenticacao">
+        <input type="hidden" name="frame" value="S">
+        <input type="hidden" name="redir" value="https://www.sline.com.br/">
+            <div class="imgcontainer">
+                <h5 class="text-white"><strong>RESULTADOS EXAMES</strong></h5>
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container-result  mt-5">
+                <!--<label for="uname"><b>Username</b></label>
+                  
+                        <div class=" input-group input-group-lg flex-nowrap ">
+                            <input placeholder="CHAVE" type="text" name="identificacao"
+                            id="identificacao" maxlength="20" REQUIRED class="form-control result"
+                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            
+                        </div>
+                <!--<label for="psw"><b>Password</b></label>
+                <div class=" input-group input-group-lg flex-nowrap pt-3">
+                    <input type="password" name="senha" id="senha" maxlength="20" required
+                        class="form-control result " placeholder="SENHA" aria-label="Password"
+                        aria-describedby="addon-wrapping">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="addon-wrapping"><i
+                                class="click clickShow fas fa-eye"></i></span>
+                    </div>
+                </div>
+               
+                <button class="btn-result-login rounded" type="submit"><b>ACESSAR</b></button>
+            </div>
+
+
+        </form>
+    </div>-->
+    <button onclick="topFunction()" id="myBtn" title="Vá para o topo!"><i class="fas fa-arrow-up"></i></button>
+    <div id="myDiv"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="js/unity.js"></script>
+    <script src="glider/glider.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/btnTop.js"></script>
+    <script src="js/imc.js"></script>
+    <script type="text/javascript" src="wa/floating-wpp.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#myDiv').floatingWhatsApp({
+                phone: '5527981112224',
+                popupMessage: 'Como posso ajudar?',
+                showPopup: true
+            });
+        });
+    </script>
+    <script src="js/btnResult.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

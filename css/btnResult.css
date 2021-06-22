@@ -1,0 +1,92 @@
+
+
+  
+  
+  .btn-result-login {
+    background-color: #0F9130;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn-result-login:hover {
+    opacity: 0.8;
+  }
+  
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 0px 0;
+    position: relative;
+  }
+  
+  .container-result {
+    padding: 0px 16px 16px 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  
+  .modal-result {
+  
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    padding-top: 60px;
+    
+    
+  }
+ 
+  
+  .modal-content-result {
+    
+    background-color: #ffffffc4;
+    margin: 5% auto 15% auto; 
+    border: 1px solid rgb(136, 136, 136);
+    width: 80%; 
+    border-radius: 10px;
+    border-color: #ffffffc4;
+  }
+  
+
+  
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  .result::placeholder {
+    color: #646464 !important;
+    font-weight: bold;
+    font-size: 15px !important;
+  }
